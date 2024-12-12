@@ -1,0 +1,30 @@
+{
+  "name": "ksg-tech-task",
+  "version": "1.0.0",
+  "description": "Tech task for KSG company",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsc -p tsconfig.json && shx cp .env ./dist/.env && node dist/main.js"
+  },
+  "keywords": [
+    "tech",
+    "task"
+  ],
+  "author": "vladimir korobenko",
+  "license": "ISC",
+  "dependencies": {
+    "assert": "^2.1.0",
+    "dotenv": "^16.4.7",
+    "fastify": "^5.1.0",
+    "fastify-plugin": "^5.0.1",
+    "ioredis": "^5.4.1",
+    "pg": "^8.13.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "@types/pg": "^8.11.10",
+    "shx": "^0.3.4",
+    "typescript": "^5.7.2"
+  }
+}
